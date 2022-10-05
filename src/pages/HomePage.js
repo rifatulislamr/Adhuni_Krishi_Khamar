@@ -10,6 +10,8 @@ import ClientReview from "../components/ClientReview/ClientReview";
 import Footer from "../components/Footer/Footer";
 import Services from "../components/Services/Services";
 import Header from '../components/Header/Header';
+import Nirbacitokhobor from '../components/Nirbacitokhobor/Nirbacitokhobor';
+import Orthouddug from '../components/Orthouddug/Orthouddug';
 
 
 class HomePage extends Component {
@@ -22,13 +24,15 @@ class HomePage extends Component {
     render() {
         return (
             <Fragment>
-              <Header title="Home"/>
+              <Header title="হোম"/>
                 <TopBanner/>
                 <Services/>
-                <Analysis/>
+                <Nirbacitokhobor />
+                <Orthouddug />
+                {/* <Analysis/> */}
+                {/* <RecentProjects/> */}
+                {/* <Courses/> */}
                 <Summary/>
-                <RecentProjects/>
-                <Courses/>
                 <Video/>
                 <ClientReview/>
                 <Footer/>

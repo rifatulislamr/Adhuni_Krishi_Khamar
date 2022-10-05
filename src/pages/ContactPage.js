@@ -16,7 +16,7 @@ class ContactPage extends Component {
         return (
             <Fragment>
                 <Header title="Contact"/>
-                <PageTop pagetitle="Contact"/>
+                <PageTop pagetitle="যোগাযোগ করুন"/>
                 <ContactSection/>
 
                 <Footer/>

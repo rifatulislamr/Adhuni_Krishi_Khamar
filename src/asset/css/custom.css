@@ -1,15 +1,22 @@
 .topFixedBanner {
-    background-image: url("../image/riad.jpg");
-    min-height: 500px;
+    background-image: url("../image/ricebg.jpg");
+    min-height: 700px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.topVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: "-1";
+
+}
 
 .topBannerOverlay {
     position: absolute;
-    min-height: 500px;
+    min-height: 700px;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
 }
@@ -19,24 +26,51 @@
 
 }
 
+
+
+
+
 .topTitle {
     font-family: "Montserrat", sans-serif;
-    color: #ffffff;
+    color: #d0e2e1;
+    padding: 20px;
     font-weight: 700;
     font-size: 48px;
-
-}
+    position: relative;
+    animation: mymove 10s infinite ;
+    animation-direction: alternate; 
+    
+} 
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
+  }  
+    
 
 .topSubTitle {
     font-family: "Releway", sans-serif;
     font-weight: 600;
     color: #ffffff;
     font-size: 24px;
+    padding: 10px;
+    position: relative;
+    animation: mymove 12s infinite;
+    animation-direction: alternate-reverse;
+   
 
+}
+@keyframes riad {
+    /* from {left: 0px;}
+    to {left: 100px;} */
+   0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
 }
 
 .serviceMainTitle {
-    color: #0073E6;
+    color:#1a1a27;
     margin: 5rem;
 
     font-family: 'Montserrat', sans-serif;
@@ -45,10 +79,11 @@
 }
 
 .serviceName {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-family: 'Releway', sans-serif;
     font-size: 22px;
     font-weight: 600;
+    color: #1a1a27;
 }
 
 .serviceDescription {
@@ -64,11 +99,14 @@
     height: 28rem;
     padding: 60px 30px 60px 30px;
     box-shadow: 0 0 4px rgba(0, 115, 230, 0.2);
+    background-color: #c5c2c2;
+    border-radius: 30px;
 
 }
 
 .serviceCard:hover {
-    box-shadow: 0 0 8px rgba(0, 115, 230, 0.2);
+    box-shadow: 0 0 8px rgba(8, 115, 230, 0.8);
+    border-radius: 40px;
 }
 
 .navTitle {
@@ -114,7 +152,7 @@
 }
 
 .navItemScroll {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none !important;
     font-family: 'Montserrat', sans-serif;
     mso-font-width: 400%;
@@ -133,7 +171,7 @@
 }
 
 .summaryBanner {
-    background-image: url("../image/riad1.jpg");
+    background-image: url("../image/ricebg.jpg");
     min-height: 350px;
     background-attachment: fixed;
     background-position: center;
@@ -314,7 +352,7 @@
 }
 
 .footerLink:hover {
-    color: #0b0bcc;
+    color: #cf0606;
     text-decoration: none;
 
 }
@@ -333,13 +371,13 @@
 }
 
 .copyrightLink:hover {
-    color: #2B2B2B;
+    color: #12e091;
     text-decoration: none;
 
 }
 
 .topFixedPage {
-    background-image: url("../image/riad.jpg");
+    background-image:linear-gradient(90deg, rgb(4, 10, 66),rgb(126, 23, 185), rgb(5, 44, 54));
     min-height: 280px;
     background-attachment: fixed;
     background-position: center;

@@ -9,7 +9,7 @@ class Footer extends Component {
     render() {
         return (
             <Fragment>
-                <Container fluid={true} className="text-center footerSection">
+                <Container fluid={true} className="text-center footerSection" style={{backgroundColor: "lightblue"}}>
                     <Row>
                         <Col lg={3} md={6} sm={12} className="p-5 text-start">
                             <h1 className="serviceName">Follow Me</h1>
@@ -56,7 +56,7 @@ class Footer extends Component {
                 </Container>
                 <Container fluid={true} className="text-center copyrightSection">
 
-                    <a className="copyrightLink" href="#">Rifatul.com &copy; 2020-2021</a>
+                    <a className="copyrightLink" href="#">Rifatul.com &copy; 2020-2022</a>
 
 
                 </Container>

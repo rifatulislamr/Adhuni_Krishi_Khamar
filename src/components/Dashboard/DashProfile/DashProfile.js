@@ -25,17 +25,17 @@ const DashProfile = (props) => {
             alt=""
           />
         </div>
-        <p style={{ lineHeight: "1.5", fontSize: "1.5rem" }}>
-          Name: {user.displayName}
+        <p style={{ lineHeight: "1.5", fontSize: "1.3rem" }}>
+          Name: {user.displayName ? user.displayName : "Rifatul Islam Riad"}
         </p>
         <p>Email: {user.email}</p>
-        <p>Phone: {user.mobile ? user.mobile : "01921488242"}</p>
+        <p>Phone: {user.mobile ? user.mobile: "01876980021"}</p>
         <p style={{ marginBottom: "0.5rem" }}>
           NID : {user.nidNo ? user.nidNo : "9749273492739"}
         </p>
         <Button
-          variant="outlined"
-          color="secondary"
+          variant="contained"
+          color="success"
           style={{ textAlign: "center" }}
         >
           Update

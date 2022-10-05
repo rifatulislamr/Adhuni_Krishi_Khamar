@@ -5,6 +5,7 @@ import Services from "../components/Services/Services";
 import ContactSection from "../components/ContactSection/ContactSection";
 import Footer from "../components/Footer/Footer";
 import Header from '../components/Header/Header';
+import Orthouddug from '../components/Orthouddug/Orthouddug';
 
 class ServicePage extends Component {
     componentDidMount() {
@@ -15,10 +16,11 @@ class ServicePage extends Component {
     render() {
         return (
             <Fragment>
-                <Header title="Service"/>
-                <PageTop pagetitle="My Services"/>
-                <Services/>
-                <ContactSection/>
+                <Header title="কৃষি গবেষণা ও প্রযুক্তি"/>
+                <PageTop pagetitle="কৃষি গবেষণা ও প্রযুক্তি"/>
+                <Orthouddug /> ________________________________________________________________
+               
+              
                 <Footer/>
 
 

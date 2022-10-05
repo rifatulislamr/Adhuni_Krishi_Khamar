@@ -14,8 +14,8 @@ class PortfolioPage extends Component {
     render() {
         return (
             <Fragment>
-                <Header title="Portfolio"/>
-                <PageTop pagetitle="FOR RENT"/>
+                <Header title="এগ্রো বিজনেস কমুনিটি"/>
+                <PageTop pagetitle="এগ্রো বিজনেস কমুনিটি"/>
                 <AllProjects/>
                 <Footer/>
 

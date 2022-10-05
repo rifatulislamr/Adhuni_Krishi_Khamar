@@ -29,6 +29,7 @@ class AppRoute extends Component {
 
 <Switch>
     <Route exact path="/" component={HomePage}/>
+    <Route exact path="/home" component={HomePage}/>
     <Route exact path="/service" component={ServicePage}/>
     <PrivateRoute path="/sale">
         <CoursesPage/>

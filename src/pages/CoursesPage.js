@@ -14,8 +14,8 @@ class CoursesPage extends Component {
     render() {
         return (
             <Fragment>
-                <Header title="course"/>
-                <PageTop pagetitle="FOR SALE"/>
+                <Header title="কৃষি ক্যাম্পাস"/>
+                <PageTop pagetitle="কৃষি ক্যাম্পাস"/>
                 <AllCourses/>
                 <Footer/>
 
