@@ -52,7 +52,7 @@ fetch(url,{
     },[user])
     
       const onSubmit = (data) => {
-        //   console.log(data)
+          console.log(data)
         setError(false);
         setPassError(false);
         if (
@@ -71,7 +71,7 @@ fetch(url,{
         // register user with google
         registerUser(data.name,data.mobile,data.nidNo,data.email, data.password)
           .then((result) => {
-            setUser({ ...user, email: data.email, displayName: data.name,mobile:data.mobile,nidNo: data.nidNo });
+            setUser({ ...user, email: data.email, displayName: data.name, mobile:data.mobile, nidNo: data.nidNo });
            alert("Registration successfull")
             history.push("/dashboard");
             saveUser(data.name,data.email,data.mobile,data.nidNo)

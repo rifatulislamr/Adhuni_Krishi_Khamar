@@ -7,7 +7,7 @@ import "./Nirbacitokhobor.css"
 
 const Nirbacitokhobor = () => {
     return (
-        <Container style={{marginTop: '50px', backgroundColor:'#c5c2c2', borderRadius:'20px'}}>
+        <Container style={{marginTop: '50px', borderRadius:'20px'}}>
         <Row>
             <Col xs={12} md={8} lg={8}>
                 <h3 className='CardHeadline'>নির্বাচিত খবর</h3>
@@ -17,16 +17,16 @@ const Nirbacitokhobor = () => {
                             return (
 
 
-                                <Card key={id} style={{ width: '14rem', height: '18rem', margin: '10px' }}>
+                                <Card key={id} style={{ width: '15rem', height: '14rem', margin: '5px' }}>
                                    
                                    <Link  to="/courseDetails">
 
                                    <Card.Img className='image' variant="top" src={picture}   ></Card.Img>
                                     <Card.Body>
                                         <Card.Title className='newTitle'>{title}</Card.Title>
-                                        <Card.Text className='newsSubTitle'>
+                                        {/* <Card.Text className='newsSubTitle'>
                                             {des}
-                                        </Card.Text>
+                                        </Card.Text> */}
 
 
                                     </Card.Body>

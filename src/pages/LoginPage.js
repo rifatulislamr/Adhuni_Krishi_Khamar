@@ -1,9 +1,9 @@
 import React, {Component, Fragment} from 'react';
 import Login from "../components/Login/Login";
-import TopNavigation from "../components/TopNavigation/TopNavigation";
 import PageTop from "../components/PageTop/PageTop";
 import Footer from "../components/Footer/Footer";
 import Header from '../components/Header/Header';
+import Ecom from '../components/Ecom/Ecom';
 
 
 class LoginPage extends Component {
@@ -18,6 +18,7 @@ class LoginPage extends Component {
                 <Header
                  title="About"/>
                 <PageTop pagetitle="Login System"/>
+               <Ecom />
                 <Login/>
               
                 <Footer/>

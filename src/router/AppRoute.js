@@ -18,6 +18,9 @@ import DocumentsPages from "../pages/DocumentsPages";
 import AuthProvider from '../AuthProvider/AuthProvider';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Dashboard from '../pages/Dashboard/Dashboard';
+import EcomPage from '../pages/EcomPage';
+import Ecom from '../components/Ecom/Ecom';
+import EcomDetailsPage from '../pages/EcomDetailsPage';
 
 
 class AppRoute extends Component {
@@ -51,6 +54,8 @@ class AppRoute extends Component {
     <Route exact path="/registration" component={RegistrationPage}/>
     <Route exact path="/map" component={GooglePage}/>
     <Route exact path="/documents" component={DocumentsPages}/>
+    <Route exact path="/Ecom" component={EcomPage}/>
+    <Route exact path="/EcomDetails" component={EcomDetailsPage}/>
 
 
 </Switch>

@@ -4,16 +4,17 @@ body{
     
 }
 .image{
-    width: 200px;
-    height: 100px;
-    background-size: cover;
+    margin-top: 4px;
+    width: 210px;
+    height: 140px;
+    background-size:cover;
 }
 a{
     text-decoration: none;
     color: rgb(24, 11, 11);
 }
 a:hover{
-    color: rgb(58, 77, 63);
+    color: rgba(177, 185, 179, 0.658);
 }
 .newTitle{
     text-align: center;
@@ -25,7 +26,7 @@ a:hover{
     font-size: 10px;
 }
 .CardHeadline{
-    background-color: rgb(31, 135, 231);
+    background-color: rgb(156, 174, 190);
     font-size: 20px;
     display: inline-block;
     padding: 5px 10px 5px 10px;

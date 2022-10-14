@@ -1,63 +1,82 @@
+import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
 import React from 'react';
-import {
-    MDBBtn,
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBCard,
-    MDBCardBody,
-    MDBInput,
-    MDBIcon
-  }
-  from 'mdb-react-ui-kit';
+import { Col, Container, Row } from 'react-bootstrap';
+import pic from '../../asset/image/banner.jpg'
+import pic2 from '../../asset/image/Login.jpg'
+import pic3 from '../../asset/image/krishi.jpg'
+import './ALogin.css'
+import { Link } from 'react-router-dom';
+
 
 const ALogin = () => {
-    return (
-        <MDBContainer fluid>
+  return (
+    <Container className='Carousel'>
+      <Row>
+       <Col sm={12} md={8}>
+       <Carousel className='carouselCard'>
+      <Carousel.Item className='riad'>
+        <img style={{height: '400px'}}
+          className="d-block w-100"
+          src="https://akkbd.com/wp-content/uploads/2022/09/Egg.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3 className='sliderHeading'>ডিম, মুরগি ও বাচ্চার আজকের (৫ অক্টোবর) বাজারদর</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img style={{height: '400px'}}
+          className="d-block w-100"
+          src="https://akkbd.com/wp-content/uploads/2022/10/Untitled-3.jpg"
+          alt="Second slide"
+        />
 
-        <MDBRow className='d-flex justify-content-center align-items-center h-100'>
-          <MDBCol col='12'>
-  
-            <MDBCard className='bg-dark text-white my-5 mx-auto' style={{borderRadius: '1rem', maxWidth: '400px'}}>
-              <MDBCardBody className='p-5 d-flex flex-column align-items-center mx-auto w-100'>
-  
-                <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
-                <p className="text-white-50 mb-5">Please enter your login and password!</p>
-  
-                <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email address' id='formControlLg' type='email' size="lg"/>
-                <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' id='formControlLg' type='password' size="lg"/>
-  
-                <p className="small mb-3 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-                <MDBBtn outline className='mx-2 px-5' color='white' size='lg'>
-                  Login
-                </MDBBtn>
-  
-                <div className='d-flex flex-row mt-3 mb-5'>
-                  <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
-                    <MDBIcon fab icon='facebook-f' size="lg"/>
-                  </MDBBtn>
-  
-                  <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
-                    <MDBIcon fab icon='twitter' size="lg"/>
-                  </MDBBtn>
-  
-                  <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
-                    <MDBIcon fab icon='google' size="lg"/>
-                  </MDBBtn>
-                </div>
-  
-                <div>
-                  <p className="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
-  
-                </div>
-              </MDBCardBody>
-            </MDBCard>
-  
-          </MDBCol>
-        </MDBRow>
-  
-      </MDBContainer>
-    );
+        <Carousel.Caption>
+        <h3 className='sliderHeading'>ডিম, মুরগি ও বাচ্চার আজকের (৫ অক্টোবর) বাজারদর</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img style={{height: '400px'}}
+          className="d-block w-100"
+          src="https://akkbd.com/wp-content/uploads/2021/12/cow-fatt.jpg"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+        <h3 className='sliderHeading'>ডিম, মুরগি ও বাচ্চার আজকের (৫ অক্টোবর) বাজারদর</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+    <Carousel.Item>
+        <img style={{height: '400px'}}
+          className="d-block w-100"
+          src="https://akkbd.com/wp-content/uploads/2022/10/Untitled-1-5.jpg"
+          alt="Fourth slide"
+        />
+        <Carousel.Caption>
+        <h3 className='sliderHeading'>ডিম, মুরগি ও বাচ্চার আজকের (৫ অক্টোবর) বাজারদর</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+       </Col>
+       <Col sm={6} md={4} >
+      
+       <Card style={{ width: '22rem', height: '26rem',marginLeft:'5rem',borderRadius:'1rem',boxShadow:'1px 3px 6px' }}>
+       <Link  to="/Ecom">
+       <Card.Img  src="https://gbagrovetgroupbd.com/assets/backend/img/uploads/product/image/1698367027188894Untitled-3.jpg" alt="Card image" />
+      <Card.ImgOverlay>
+        
+        
+      
+      </Card.ImgOverlay>
+        <Card.Text className='textPicture'>মূল্যঃ ১১০ টাকা+কুরিয়ার চার্জসহ</Card.Text>
+        <Card.Text className='textPicture2'>বিস্তারিতঃ০১৮৭৬৯৮০০২১ </Card.Text>
+        </Link>
+    </Card>
+       </Col>
+      </Row>
+    </Container>
+  );
 };
 
 export default ALogin;

@@ -12,6 +12,7 @@ import Services from "../components/Services/Services";
 import Header from '../components/Header/Header';
 import Nirbacitokhobor from '../components/Nirbacitokhobor/Nirbacitokhobor';
 import Orthouddug from '../components/Orthouddug/Orthouddug';
+import ALogin from '../components/ALogin/ALogin';
 
 
 class HomePage extends Component {
@@ -26,7 +27,8 @@ class HomePage extends Component {
             <Fragment>
               <Header title="হোম"/>
                 <TopBanner/>
-                <Services/>
+                {/* <Services/> */}
+                <ALogin />
                 <Nirbacitokhobor />
                 <Orthouddug />
                 {/* <Analysis/> */}
